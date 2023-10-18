@@ -3,3 +3,9 @@ from django.http import HttpResponse
 
 def login(request):
    return render(request, 'login.html')
+
+def register(request):
+   return render(request, 'register.html')
+
+def home(request):
+   return HttpResponse("Home Page")

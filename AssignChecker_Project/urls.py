@@ -21,5 +21,7 @@ from AssignChecker_Project import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login, name="Login")
+    path('', views.login, name="Login"),
+    path('signup/', views.register, name="Register"),
+    path('home/',views.home, name="Home")
 ]
